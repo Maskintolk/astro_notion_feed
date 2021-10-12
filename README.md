@@ -6,9 +6,8 @@
 * Deployment: Netlify
 
 ## Link to demo
-```
 [Demo site](https://stupefied-curie-9aac04.netlify.app/)
-```
+
 
 # This project was built on the following Astro Starter Kit: Minimal
 
