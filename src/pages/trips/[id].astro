@@ -1,0 +1,31 @@
+---
+import { getNewPages } from '../../components/Utils';
+
+export async function getStaticPaths() {
+  const results = await getNewPages();
+
+  return results.map((page) => {
+    return {
+      params: { id: page.id },
+      props: { page: page }
+    }
+  });
+}
+
+const { page } = Astro.props;
+---
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Bogtur {page.title}</title>
+</head>
+
+<body>
+	<h1>{page.title}</h1>
+</body>
+
+</html>

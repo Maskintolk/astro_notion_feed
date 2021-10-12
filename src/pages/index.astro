@@ -1,0 +1,50 @@
+---
+import '../components/FeedCard';
+import { getNewPages } from '../components/Utils';
+
+const results = await getNewPages();
+--- 
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #374046;
+  }
+  h1 {
+    text-transform: uppercase;
+    color: #FFECB3;
+  }
+  a {
+    text-decoration: none;
+    color: #212121;
+  }
+  h3 {
+    color: #aaa;
+  }
+  feed-card {
+    margin: 20px;
+  }
+</style>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Familien Skovs Bogture</title>
+</head>
+
+<body>
+	<h1>Familien Skovs Bogture</h1>
+	<h3>A POC using Notion API, Lit and Astro deploed to Netlify from Github</h3>
+  {results.map(page => (
+    <feed-card page={JSON.stringify(page)}></feed-card>
+  ))}
+  <h3>Built with <a href="https://astro.build">Astro</a></h3>
+</body>
+
+</html>
