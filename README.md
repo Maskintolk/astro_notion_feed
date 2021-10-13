@@ -9,7 +9,7 @@
 [Demo site](https://stupefied-curie-9aac04.netlify.app/)
 
 ## Source page in Notion
-![Notion source page](![image](https://user-images.githubusercontent.com/18086163/137181232-aa0696a4-7d27-4f6e-9eb7-572323ee2afe.png))
+![Notion source page](https://user-images.githubusercontent.com/18086163/137181232-aa0696a4-7d27-4f6e-9eb7-572323ee2afe.png)
 
 [Link to Notion template](https://jakobskov.notion.site/My-Family-Book-Club-b2df2361835345ad9eab6c8c71037dde)
 
