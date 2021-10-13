@@ -14,7 +14,7 @@
 [Link to Notion template](https://jakobskov.notion.site/My-Family-Book-Club-b2df2361835345ad9eab6c8c71037dde)
 
 ## Lit rendered Astro version
-![Lit rendered page](https://user-images.githubusercontent.com/18086163/136992711-a1d232db-199a-4cb3-9b62-2f175e952955.png)
+![Lit rendered page](https://user-images.githubusercontent.com/18086163/137182095-96d6b1d9-7483-4546-b7d2-ca0f8987e146.png)
 
 
 # This project was built on the following Astro Starter Kit: Minimal

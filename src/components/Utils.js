@@ -26,7 +26,7 @@ export const getNewPages = async () => {
         id: page.id,
         icon: page.icon,
         title: page?.properties?.Name?.title[0]?.text?.content ?? '',
-        date: page?.properties?.Dato?.date?.start ?? ''
+        date: page?.properties?.Date?.date?.start ?? ''
       };
     });
   }
