@@ -35,16 +35,17 @@ const results = await getNewPages();
 	<meta charset="utf-8" />
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	<meta name="viewport" content="width=device-width" />
-	<title>Familien Skovs Bogture</title>
+	<title>My Family Book Club</title>
 </head>
 
 <body>
-	<h1>Familien Skovs Bogture</h1>
+	<h1>My Family Book Club</h1>
 	<h3>A POC using Notion API, Lit and Astro deploed to Netlify from Github</h3>
   {results.map(page => (
     <feed-card page={JSON.stringify(page)}></feed-card>
   ))}
   <h3>Built with <a href="https://astro.build">Astro</a></h3>
+  <h3>Go <a href="https://jakobskov.notion.site/My-Family-Book-Club-b2df2361835345ad9eab6c8c71037dde">here</a> til duplicate the Notion template and start your own Family book club!</h3>
 </body>
 
 </html>
