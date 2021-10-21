@@ -1,6 +1,6 @@
 # Astro website showing a feed of pages from a database in Notion, rendering each one with Lit and deploying to Netlify.
 
-* Source database: [Notion](https://notion.so/)
+* Source database: [Notion](https://www.notion.so/jakobskov/My-Family-Book-Club-b2df2361835345ad9eab6c8c71037dde)
 * Astro SSR renderer: [Lit](https://lit.dev/)
 * Building: [Astro](https://astro.build/)
 * Deployment: [Netlify](https://www.netlify.com)
