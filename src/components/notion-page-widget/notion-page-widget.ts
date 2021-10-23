@@ -45,9 +45,6 @@ export class NotionPageWidget extends LitElement {
   @property({ type: String })
   emoji: string = '';
 
-  @property({ type: Object })
-  page: Object;
-
   /**
    * If we can't fetch the page from Notion, we use this to display the error template
    */
