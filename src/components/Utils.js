@@ -1,13 +1,13 @@
-import { Client } from "@notionhq/client";
+import { Client } from '@notionhq/client';
 import dotenv from 'dotenv';
 
-// I can't figure out how to use Astro's (or Snowpack's) built-in import.meta.env... 
+// I can't figure out how to use Astro's (or Snowpack's) built-in import.meta.env...
 dotenv.config();
 
 // Notion environment variables
 const { NOTION_SECRET, NOTION_DATABASE_ID } = process.env;
 
-// Cache the Notion pages between different astro pages 
+// Cache the Notion pages between different astro pages
 let pageResults = [];
 
 export const getNewPages = async () => {
@@ -24,9 +24,11 @@ export const getNewPages = async () => {
     pageResults = results.map((page) => {
       return {
         id: page.id,
+        url: page.url,
+        image: page.cover?.external?.url,
         icon: page.icon,
         title: page?.properties?.Name?.title[0]?.text?.content ?? '',
-        date: page?.properties?.Date?.date?.start ?? ''
+        date: page?.properties?.Date?.date?.start ?? '',
       };
     });
   }

@@ -1,5 +1,5 @@
 ---
-import '../components/FeedCard';
+import '../components/notion-page-widget/notion-page-widget';
 import { getNewPages } from '../components/Utils';
 
 const results = await getNewPages();
@@ -24,7 +24,7 @@ const results = await getNewPages();
   h3 {
     color: #aaa;
   }
-  feed-card {
+  notion-page-widget {
     margin: 20px;
   }
 </style>
@@ -32,7 +32,7 @@ const results = await getNewPages();
 <html lang="en">
 
 <head>
-	<meta charset="utf-8" />
+	<meta charset="UTF-8" />
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 	<meta name="viewport" content="width=device-width" />
 	<title>My Family Book Club</title>
@@ -40,12 +40,18 @@ const results = await getNewPages();
 
 <body>
 	<h1>My Family Book Club</h1>
-	<h3>A POC using Notion API, Lit and Astro deploed to Netlify from Github</h3>
+	<h3>A POC using Notion API, Lit and Astro automatically deployed to Netlify from Github commits</h3>
   {results.map(page => (
-    <feed-card page={JSON.stringify(page)}></feed-card>
+    <notion-page-widget 
+      emoji="{page.icon.emoji}" 
+      imageurl="{page.image}" 
+      pagetitle="{page.title}" 
+      pageurl="{page.url}"
+      size="medium">
+    </notion-page-widget>
   ))}
   <h3>Built with <a href="https://astro.build">Astro</a></h3>
-  <h3>Go <a href="https://jakobskov.notion.site/My-Family-Book-Club-b2df2361835345ad9eab6c8c71037dde">here</a> til duplicate the Notion template and start your own Family book club!</h3>
+  <h3>Go <a href="https://jakobskov.notion.site/My-Family-Book-Club-b2df2361835345ad9eab6c8c71037dde">here</a> to duplicate the Notion template and start your own Family book club! Alternatively click on one of the page widgets above.</h3>
 </body>
 
 </html>
